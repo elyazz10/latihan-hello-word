@@ -5,7 +5,7 @@ void main() {
     const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blue,
         
         body:
         Center(
