@@ -34,7 +34,7 @@ void main() {
                 ),
               ),
               Text(
-                'NIM: 112170130',
+                'NIM: 1125170130',
                 style: TextStyle(
                   fontSize: 16,
                 ),
