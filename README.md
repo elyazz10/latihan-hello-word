@@ -1,17 +1,73 @@
-# hello_world
+# Latihan Flutter Aplikasi mobile
 
-A new Flutter project.
+##  yang sudah dibuat ini
 
-## Getting Started
+- **Background Color:** Mengatur warna latar belakang menjadi kuning.
+- **Text Widget:** Menampilkan tulisan `hello world` dan `belajar flutter`.
+- **Text Style:** Mengatur ukuran dan ketebalan tulisan.
+- **Identitas Mahasiswa:** Menampilkan nama dan NIM.
+- **Icon Widget:** Menampilkan ikon komputer menggunakan `Icons.computer`.
+- **Center:** Menempatkan kumpulan widget di tengah layar.
+- **Column:** Menyusun tulisan dan ikon secara vertikal.
+- **Main Axis Alignment:** Mengatur posisi widget ke tengah secara vertikal.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+```dart
+import 'package:flutter/material.dart';
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+void main() {
+  runApp(
+    const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        //ubah warna bg nya
+        backgroundColor: Colors.yellow,
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+        body:
+        Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // ukuran font stylenye
+              Text(
+                'hello world',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                'belajar flutter',
+                style: TextStyle(
+                  fontSize: 18,
+                ),
+              ),
+              Text(
+                'Nama: Ahmad Ilyas',
+                style: TextStyle(
+                  fontSize: 16,
+                ),
+              ),
+              Text(
+                'NIM: 1125170130',
+                style: TextStyle(
+                  fontSize: 16,
+                ),
+              ),
+              Icon(
+                Icons.computer,
+                size: 35,
+              ),
+            ],
+          ),
+        )
+      ),
+    )
+  );
+}
+```
+
+
+- **Nama:** Ahmad Ilyas
+- **NIM:** 1125170130
+- **Mata Kuliah:** Aplikasi mobile
